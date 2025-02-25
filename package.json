@@ -1,10 +1,17 @@
 {
-  "name": "@vy/express",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "vy-express",
+  "version": "0.0.4",
+  "description": "Express.js alternative",
+  "types": "./lib/types/index.d.ts",
+  "main": "./lib/index.js",
+  "files": [
+    "lib/**/*"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "del-cli ./lib",
+    "build": "npm run clean && tsc -p ./tsconfig.json",
+    "prepack": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -16,5 +23,14 @@
   "bugs": {
     "url": "https://github.com/ViacheslavYuskevych/ts-node/issues"
   },
-  "homepage": "https://github.com/ViacheslavYuskevych/ts-node#readme"
+  "homepage": "https://github.com/ViacheslavYuskevych/ts-node#readme",
+  "devDependencies": {
+    "@types/formidable": "^3.4.5",
+    "@types/node": "^22.13.5",
+    "del-cli": "^6.0.0",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "formidable": "^3.5.2"
+  }
 }
