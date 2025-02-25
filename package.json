@@ -1,0 +1,20 @@
+{
+  "name": "@vy/express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ViacheslavYuskevych/ts-node.git"
+  },
+  "keywords": [],
+  "author": "Viacheslav Yuskevych",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ViacheslavYuskevych/ts-node/issues"
+  },
+  "homepage": "https://github.com/ViacheslavYuskevych/ts-node#readme"
+}
